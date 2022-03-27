@@ -1,7 +1,6 @@
 <template>
   <p>
     <span>vuex user/age: {{age}}</span>
-    <Button @click="addAge">age++</Button>
     <ElButton @click="addAge">age++</ElButton>
   </p>
 </template>
@@ -9,7 +8,6 @@
 <script>
 import {defineComponent, computed} from 'vue';
 import {useStore} from 'vuex';
-import { Button } from "ant-design-vue";
 import { ElButton, ElSelect } from 'element-plus';
 export default defineComponent({
   name: 'Home',

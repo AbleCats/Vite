@@ -8,12 +8,6 @@ export default defineConfig({
     vue(),
     styleImport({
       libs: [{
-        libraryName: 'ant-design-vue',
-        esModule: true,
-        resolveStyle: (name) => {
-          return `ant-design-vue/es/${name}/style/css`;
-        },
-      },{
         libraryName: 'element-plus',
         esModule: true,
         ensureStyleFile: true,
